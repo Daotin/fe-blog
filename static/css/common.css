@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'Consolas';
+  font-display: fallback;
+  src: url('../font/consola.ttf');
+}
+
+html {
+  color: #333333;
+  background: #ffffff;
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 500ms ease;
+  font-family: Consolas, 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+}
+body {
+  max-width: 680px;
+  padding: 0 14px;
+  margin: 0 auto;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+ol,
+ul {
+  list-style: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+li,
+blockquote {
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+input,
+select,
+textarea {
+  font-family: inherit;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+pre,
+code {
+  font-family: inherit;
+}
+input:-webkit-autofill {
+  /* 自动填充的文本颜色 */
+  -webkit-text-fill-color: #333333 !important;
+  /* -webkit-text-fill-color: var(--text-color) !important; */
+
+  /* 方式1：使用内阴影覆盖自动填充的背景色 */
+  /* box-shadow: 0 0 0 1000px #ffffff inset !important; */
+
+  /* 方式2：通过延迟一个月，取消自动填充的背景色 */
+  -webkit-transition: background-color 2592000s ease-in-out 0s;
+  transition: background-color 2592000s ease-in-out 0s;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #999999;
+}
+::selection {
+  background-color: #4a4a4a;
+  color: #f9f9f9;
+}
+.hover-underline {
+  position: relative;
+}
+.hover-underline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #333333;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: transform 200ms ease-in-out;
+}
+.hover-underline:hover:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.header {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 10px;
+  user-select: none;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+.header .menu {
+  margin-right: -9px;
+  text-align: right;
+  user-select: none;
+}
+.header .menu a {
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 9px;
+  white-space: nowrap;
+  user-select: auto;
+}
+.footer {
+  padding: 15px 0;
+  font-size: 14px;
+}
+.footer a {
+  text-decoration: underline;
+  color: #000000;
+  padding: 0 4px;
+  white-space: nowrap;
+}
+#to-top {
+  position: fixed;
+  z-index: 99;
+  right: 16px;
+  bottom: 12px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  border-radius: 10%;
+  background-color: #000000;
+  opacity: 0.45;
+  overflow: hidden;
+  transform: translateY(66px);
+  transition: transform 200ms ease-in-out;
+}
+#to-top.show {
+  transform: translateY(0);
+}
+#to-top > span {
+  display: block;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 13px;
+  transform: translateX(-50%) rotate(45deg);
+}
+#to-top > span:first-child {
+  background-color: #ffffff;
+}
+#to-top > span:last-child {
+  background-color: #000000;
+  transform: translate(-50%, 16%) rotate(45deg);
+}
+@media screen and (max-width: 560px) {
+  .header {
+    padding: 35px 0 20px 0;
+    justify-content: flex-start;
+  }
+  .header .menu {
+    margin-right: -2px;
+    text-align: left;
+  }
+  .header .menu a {
+    margin: 2px 5px;
+    font-size: 15px;
+  }
+}
