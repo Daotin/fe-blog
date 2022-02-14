@@ -10,7 +10,7 @@
 .list-post li {
   display: flex;
   align-items: center;
-  padding: 8px 0;
+  padding: 4px 0;
 }
 .list-post li .date {
   color: #666666;
@@ -106,6 +106,13 @@
   font-weight: bold;
   color: #ff7f7f;
 }
+
+.markdown-body ol {
+  background: #f5f5f5;
+  padding: 10px 2em;
+  border: 1px solid #ccc;
+}
+
 @media screen and (max-width: 560px) {
   .list-post > h2 {
     padding: 10px 0;

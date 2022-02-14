@@ -1,7 +1,7 @@
 encoding: utf-8
 
 # SEO相关信息
-title: Daotin Blog
+title: Daotin's Blog
 description: Daotin的个人博客
 keywords: Daotin,Blog,Web,Html,JavaScript
 author: Daotin
@@ -21,7 +21,7 @@ domainUrl: 'https://daotin.github.io'
 baseurl: ''
 
 # 吐个槽地址，会在chat页面中重定向到该地址
-tucaoUrl: '' # https://support.qq.com/product/86335
+tucaoUrl: 'https://support.qq.com/product/380958' # https://support.qq.com/product/86335
 
 # 菜单
 # 必填字段 title: '文本' url: '链接'

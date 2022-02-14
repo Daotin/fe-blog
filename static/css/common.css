@@ -104,6 +104,9 @@ input:-webkit-autofill {
   visibility: visible;
   transform: scaleX(1);
 }
+.hover-underline:nth-of-type(3) {
+  color: #ff7f7f;
+}
 .header {
   padding: 40px 0;
   display: flex;
@@ -135,6 +138,7 @@ input:-webkit-autofill {
 .footer {
   padding: 15px 0;
   font-size: 14px;
+  text-align: center;
 }
 .footer a {
   text-decoration: underline;
