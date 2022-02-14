@@ -72,8 +72,8 @@
   margin: 0 auto;
   height: auto;
   box-shadow: 0 0 5px #e0e0e0;
-  border: 1px solid #eee;
-  border-radius: 4px;
+  /* border: 1px solid #eee;
+  border-radius: 4px; */
 }
 .page-post img[alt='line'] {
   display: inline-block;
