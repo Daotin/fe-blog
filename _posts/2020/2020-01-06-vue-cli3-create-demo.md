@@ -1,10 +1,15 @@
 ---
+layout: mypost
 title: 使用vue-cli3+快速搭建简单的vue项目
 tags: vue vue-cli
 ---
 
 1. 目录
 {:toc}
+
+> 20220215：新文章地址：https://daotin.github.io/posts/2021/10/31/%E4%BD%BF%E7%94%A8VueCLI%E6%90%AD%E5%BB%BA%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE.html
+
+---
 
 ## 问题描述
 使用`vue-cli3+`快速搭建一个可用作demo的项目。
