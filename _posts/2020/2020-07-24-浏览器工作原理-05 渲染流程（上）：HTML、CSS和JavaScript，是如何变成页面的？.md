@@ -1,3 +1,9 @@
+---
+layout: mypost
+title: 浏览器工作原理-05 渲染流程（上）：HTML、CSS和JavaScript，是如何变成页面的？
+tags: 浏览器工作原理
+---
+
 具体笔记在 04 章节：#30 
 
 ![](https://raw.githubusercontent.com/Daotin/pic/master/img/20190912173635.png)

@@ -1,3 +1,10 @@
+---
+layout: mypost
+title: 浏览器工作原理-19  Promise：使用Promise，告别回调函数
+tags: 浏览器工作原理
+---
+
+
 ## Promise 引入原因
 
 Promise 解决的是异步编码风格的问题，而不是一些其他的问题。

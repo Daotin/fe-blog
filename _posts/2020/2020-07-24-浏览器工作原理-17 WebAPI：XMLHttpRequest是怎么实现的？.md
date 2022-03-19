@@ -1,4 +1,8 @@
-
+---
+layout: mypost
+title: 浏览器工作原理-17 WebAPI：XMLHttpRequest是怎么实现的？
+tags: 浏览器工作原理
+---
 
 先来看个“XMLHttpRequest 运行机制”图：
 
