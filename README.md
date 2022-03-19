@@ -4,7 +4,7 @@
 
 ## 关于我
 
-高级前端开发 + Google脑残粉，爱技术，爱开源，爱赚钱。互联网中毒症患者，Want to be a good frontend developer!
+前端开发工程师 + Google脑残粉，爱技术，爱开源，爱分享。互联网中毒症患者，Want to be a good frontend developer!
 
 
 ## 联系我
