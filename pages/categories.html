@@ -3,13 +3,6 @@ layout: page
 title: 文章分类
 ---
 
-{% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y' " %}
-
-{% for group in posts_by_year %}
-
-  <h3 class="archives-title">{{ group.name }} （共{{ group.items | size }}篇）</h3>
-
-
 
 <div class="page page-categories">
   <div class="list-category">
