@@ -54,6 +54,7 @@ function doRemoveTag() {
   }
 }
 ```
+![image](https://user-images.githubusercontent.com/23518990/174584798-90db2d7f-5d70-43a7-b38e-1213273ae307.png)
 
 
 > 参考链接：
