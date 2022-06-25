@@ -21,9 +21,13 @@
 }
 .page-post .post h1,
 .page-post .post h2 {
-  font-weight: normal;
+  font-weight: bold;
   font-size: 17px;
   position: relative;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ececec;
 }
 .page-post .post h1::before,
 .page-post .post h2::before {
