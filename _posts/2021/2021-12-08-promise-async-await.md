@@ -1,6 +1,6 @@
 ---
 layout: mypost
-title: async和await
+title: promise,async和await
 tags: xxx
 ---
 
@@ -156,8 +156,90 @@ function foo() {
 在await表达式之后的代码可以被认为是存在在链式调用的then回调中，多个await表达式都将加入链式调用的then回调中，返回值将作为最后一个then回调的返回值。
 
 
+## promise的then、catch、finally
+
+示例代码：
+
+```js
+let p = new Promise((resolve, reject) => {
+  resolve('success')
+  // reject('fail')
+})
+
+p.then(res => {
+  console.log('resolve==>', res)
+  // setTimeout(() => {
+  //   throw 'err1'
+  // }, 10);
+  throw 'err1'
+}, err => {
+  console.log('reject==>', err)
+})
+.catch(err => {
+  console.log('catch==>', err)
+})
+.finally(_ => {
+  console.log('==>finally')
+})
+```
 
 
+
+结论：
+
+- 当new promise抛出异常（不管是使用reject还是throw）时：
+    - 如果then的第二个参数写了，则不会走catch，否则会走catch
+    - 在then的第一个参数里面可以抛出异常，catch可以捕获到；但是如果是在异步操作中抛出的异常，则catch无法捕获
+- 当new promise抛出异常如果是异步的，则会报错。
+- finally无论成功与否都会执行。
+
+
+## promise中resolve和return resolve的区别
+
+下面二者有啥区别？
+
+```ts
+return new Promise( (resolve, reject) => {
+  fs.readFile(file, (err, data) => {
+    if (err) reject(err)
+    return resolve(data)
+  })
+})
+
+return new Promise( (resolve, reject) => {
+  fs.readFile(file, (err, data) => {
+    if (err) reject(err)
+    resolve(data)
+  })
+})
+
+```
+
+
+
+解答：
+
+return resolve() 将像一个正常的返回一样结束函数的执行，这只是取决于你的代码流程，如果你不希望或需要在你的函数中执行任何更多的代码，那么使用return来退出函数，仅此而已。不会改变返回的值。
+
+```ts
+return new Promise( (resolve, reject) => {
+  fs.readFile(file, (err, data) => {
+    if (err) reject(err)
+    return resolve(data)
+    console.log('after return') // 不会执行
+  })
+})
+```
+
+只有resolve会创建一个成功的承诺状态，return不会。
+
+这与函数中的普通return语句相同，与promise无关。
+
+
+
+参考链接：
+
+[https://stackoverflow.com/questions/42349338/promise-what-is-the-difference-between-return-resolve-and-resolve#](https://stackoverflow.com/questions/42349338/promise-what-is-the-difference-between-return-resolve-and-resolve#)
 
 （完）
 
