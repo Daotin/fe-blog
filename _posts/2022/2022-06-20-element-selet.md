@@ -1,3 +1,9 @@
+---
+title: ElementUI中一个Select业务问题
+tags: ElementUI
+---
+
+
 ## 问题描述
 
 今天有个需求使用到Element UI的下拉框Select，有多选功能，但是需要在点击删除的弹出提示框，在提示框中确认后才可以删除。
