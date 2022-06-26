@@ -37,7 +37,7 @@ InfiniteScroll有一个属性`infinite-scroll-distance` 表示触发加载的距
 
 网上还有另一种方案：当滚动到底部时，判断数据是否加载完成，如果为加载完成，则手动触发数据获取方法。（需要后端配合，因为需要后端给出数据是否加载完成）
 
-```JavaScript
+```javaScript
 handleScroll (e){
     //滚动条滚动时，距离顶部的距离
     const scrollTop = e.target.scrollTop;
