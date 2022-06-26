@@ -19,7 +19,7 @@ tags: elementUI
 
 目前让用户在滚不动的时候先缩放到90% （Ctrl+滚轮下），此时可以滚动进行查看。
 
-![](https://secure2.wostatic.cn/static/jGjKJWPvmaFNSjZhpAQ4M7/image.png)
+![](./image/4.png)
 
 ## 问题分析
 
