@@ -1,7 +1,7 @@
 .page-post {
   font-size: 14px;
   line-height: 2;
-  word-break: break-all;
+  word-break: break-word;
 }
 .page-post .title {
   font-size: 18px;
@@ -101,7 +101,7 @@
 .page-post code {
   font-size: 13px;
   background-color: #eeeeee;
-  word-break: break-all;
+  word-break: break-word;
   padding: 3px 5px;
   margin: 0 4px;
   border-radius: 5px;

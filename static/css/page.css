@@ -88,7 +88,7 @@
 }
 .page-search .list-search .title {
   display: inline-block;
-  word-break: break-all;
+  word-break: break-word;
   font-size: 14px;
   font-weight: bold;
   padding-bottom: 1px;
@@ -98,7 +98,7 @@
   display: block;
   font-size: 14px;
   color: #5a5a5a;
-  word-break: break-all;
+  word-break: break-word;
   padding: 10px 0;
 }
 .page-search .list-search .hint {
