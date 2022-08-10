@@ -1,4 +1,5 @@
 ---
+layout: mypost
 title: git commit 提交规范
 tags: 代码规范
 ---
