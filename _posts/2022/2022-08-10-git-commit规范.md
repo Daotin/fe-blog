@@ -12,7 +12,7 @@ tags: 代码规范
 ### 1、安装
 
 - 必须安装
-```bash
+```
 # 1、安装husky
 npm install husky -D
 
@@ -41,7 +41,7 @@ conventional-changelog -p angular -i CHANGELOG.md -s
 ```
 
 - 可选安装（*如果需要使用commitizen命令行提交commit的话*）
-```bash
+```
 # 1、安装commitizen
 npm install -g commitizen
 
@@ -79,7 +79,7 @@ commitizen init cz-conventional-changelog --save-dev --save-exact
 
 示例如下：（可以看出这些提交信息都是有固定格式的）
 
-![Untitled](./images/commit-0.png)
+![Untitled](/images/20220810/commit-0.png)
 
 ### 标准格式
 
@@ -231,7 +231,7 @@ Closes: #111, #222, #333
 
 **1、全局安装commitizen命令行**
 
-```bash
+```
 npm install -g commitizen
 ```
 
@@ -241,7 +241,7 @@ npm install -g commitizen
 
 `Commitizen` 支持多种不同的提交规范，可以安装和配置不同的适配器实现。因为我们使用约定式提交规范，所以使用 `cz-conventional-changelog` 适配器初始化项目
 
-```bash
+```
 commitizen init cz-conventional-changelog --save-dev --save-exact
 ```
 
@@ -272,17 +272,17 @@ commitizen init cz-conventional-changelog --save-dev --save-exact
 
 在命令行输入`cz`，或者`git cz` ，系统会提示您填写一些必填字段，并且您的提交消息进行格式化。
 
-![Untitled](./images/commit-1.png)
+![Untitled](/images/20220810/commit-1.png)
 
 它会引导你一步步填下去，然后自动提交该commit。
 
-![Untitled](./images/commit-2.png)
+![Untitled](/images/20220810/commit-2.png)
 
 > 遇到的问题：
 >
 > 在输入cz的是提示，cz-conventional-changelog 找不到，看了路径是默认找的.git下面的node_modules，因为我们项目是项目集的形式，所以要修改路径。正常的单个项目不需要修改。
 
-![Untitled](./images/commit-3.png)
+![Untitled](/images/20220810/commit-3.png)
 
 ```jsx
 "config": {
@@ -306,7 +306,7 @@ commitizen init cz-conventional-changelog --save-dev --save-exact
 
 最后可以配置成中文的，甚至可以跳过其中的某些步骤：
 
-![Untitled](./images/commit-4.png)
+![Untitled](/images/20220810/commit-4.png)
 
 
 
@@ -318,27 +318,27 @@ commitizen init cz-conventional-changelog --save-dev --save-exact
 
 插件一：Commit Message Editor
 
-![Untitled](./images/commit-5.png)
+![Untitled](/images/20220810/commit-5.png)
 
-![Untitled](./images/commit-6.png)
+![Untitled](/images/20220810/commit-6.png)
 
-![Untitled](./images/commit-7.png)
+![Untitled](/images/20220810/commit-7.png)
 
 
 
 插件二：Conventional Commits
 
-![Untitled](./images/commit-8.png)
+![Untitled](/images/20220810/commit-8.png)
 
-![Untitled](./images/commit-9.png)
+![Untitled](/images/20220810/commit-9.png)
 
 缺点：没有对`BREAKING CHANGE` 的选择提示，需要自己手写。
 
 #### webstorm
 
-![Untitled](./images/commit-10.png)
+![Untitled](/images/20220810/commit-10.png)
 
-![Untitled](./images/commit-11.png)
+![Untitled](/images/20220810/commit-11.png)
 
 ## 如何校验commit message
 
@@ -395,7 +395,7 @@ git hook有很多，包括客户端和服务端两种。
 
 hook文件示例：
 
-```bash
+```
 #!/bin/sh
 
 echo "Say hi from gitlab server ok 😄"
@@ -436,11 +436,11 @@ exit 0
 
 例如，如果每个提交都应该引用 Jira 问题（如 Fix: JIRA-123），则正则表达式将为 `JIRA\-\d+`。
 
-![](./images/commit-18.png)
+![](/images/20220810/commit-18.png)
 
 然后在push的时候，如果不符合规范就会报错：
 
-```bash
+```
 remote: GitLab: Commit message does not follow the pattern '^(fix|feat|refactor|chore|style|docs|test):([\s\S]){5,}$|^Merge|^Resolve|^Feat'
 ...
 master -> master (pre-receive hook declined)
@@ -479,7 +479,7 @@ master -> master (pre-receive hook declined)
 >  客户端的hook，由于没有平台的限制，且配置方便，因而更加常用。我们需要在`.git/hooks`文件夹下修改相关的hook文件，但是.git文件夹下的文件不能同步到项目仓库中，因而需要每个开发者在自己本地手动配置，比较麻烦，而且写法可能也不熟悉。
 >  所以我们需要一个工具方便我们配置客户端hook，并且可以同步到代码仓库，它就是Husky。
 >
->  ![](./images/commit-19.png)
+>  ![](/images/20220810/commit-19.png)
 
 
 
@@ -491,7 +491,7 @@ master -> master (pre-receive hook declined)
 
 **1、安装husky**
 
-```bash
+```
 npm install husky -D
 ```
 
@@ -501,7 +501,7 @@ npm install husky -D
 
 自动配置（推荐）：使用 `husky-init`命令快速在项目初始化一个 husky 配置。
 
-```bash
+```
 npx husky-init && npm install
 ```
 
@@ -510,7 +510,7 @@ npx husky-init && npm install
 > 错误提示：还是因为我们是项目集的形式，每个项目下没有`.git`文件夹。所以我们需要在仓库根目录下，执行该命令。（可以参考最后的[补充说明](#补充说明)）
 > 
 
-![Untitled](./images/commit-12.png)
+![Untitled](/images/20220810/commit-12.png)
 
 > 注意事项：由于它默认创建的pre-commit中会执行npm test指令，但是我们项目中没有对应的指令，所以后续在commit的时候会报错，所以需要在生成的pre-commit文件中，把npm test指令删除。
 
@@ -524,11 +524,11 @@ npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 
 错误提示：
 
-![Untitled](./images/commit-13.png)
+![Untitled](/images/20220810/commit-13.png)
 
 解决方案：**升级npm**
 
-![Untitled](./images/commit-14.png)
+![Untitled](/images/20220810/commit-14.png)
 
 
 
@@ -542,7 +542,7 @@ npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 
 **1、安装**
 
-```bash
+```
 npm install --save-dev @commitlint/config-conventional @commitlint/cli
 ```
 
@@ -572,11 +572,11 @@ module.exports = {
 
 - 命令行提交
 
-![Untitled](./images/commit-15.png)
+![Untitled](/images/20220810/commit-15.png)
 
 - vscode可视化提交
 
-![Untitled](./images/commit-16.png)
+![Untitled](/images/20220810/commit-16.png)
 
 
 
@@ -680,7 +680,7 @@ module.exports = {
 
 **1、安装**
 
-```bash
+```
 npm install conventional-changelog-cli -g
 npm install conventional-changelog-cli -D
 ```
@@ -689,7 +689,7 @@ npm install conventional-changelog-cli -D
 
 **2、生成changelog**
 
-```bash
+```
 conventional-changelog -p angular -i CHANGELOG.md -s
 ```
 
@@ -711,7 +711,7 @@ conventional-changelog -p angular -i CHANGELOG.md -s
 - `-i`：指定输出的文件名称
 - `-r`：从最新生成多少个版本。如果为 0，将重新生成整个变更日志。默认值：1
   
-    ```bash
+    ```
     conventional-changelog -p angular -i CHANGELOG.md -s -r 0 // 重新生成全部changelog
     ```
     
@@ -857,7 +857,7 @@ module.exports = {
 
 然后就可以生成下面的样子
 
-![Untitled](./images/commit-17.png)
+![Untitled](/images/20220810/commit-17.png)
 
 参考文档：
 
@@ -872,7 +872,7 @@ module.exports = {
 
 （以喻支付仓库为例）
 
-![](./images/commit-20.png)
+![](/images/20220810/commit-20.png)
 
 就需要在**仓库根目录下**，新增`package.json`文件，然后npm install安装commitizen，husky和commitlint等操作（就是把上面所有的操作放到仓库根目录），才能够校验commit。
 
