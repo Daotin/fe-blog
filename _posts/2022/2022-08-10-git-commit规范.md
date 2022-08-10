@@ -1,5 +1,4 @@
 ---
-layout: mypost
 title: git commit 提交规范
 tags: 代码规范
 ---
@@ -12,6 +11,7 @@ tags: 代码规范
 ### 1、安装
 
 - 必须安装
+
 ```
 # 1、安装husky
 npm install husky -D
@@ -41,6 +41,7 @@ conventional-changelog -p angular -i CHANGELOG.md -s
 ```
 
 - 可选安装（*如果需要使用commitizen命令行提交commit的话*）
+
 ```
 # 1、安装commitizen
 npm install -g commitizen
