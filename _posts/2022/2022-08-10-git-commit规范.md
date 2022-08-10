@@ -5,8 +5,6 @@ tags: 代码规范
 
 # Git Commit提交规范
 
-![Untitled](./images/commit-0.png)
-
 ## TLDR（太长不看版）
 已经了解了或者想快速完成项目配置的，可以按照下面操作快速完成**推荐**的配置：
 
