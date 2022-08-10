@@ -1,4 +1,5 @@
 ---
+layout: mypost
 title: js能够保证object属性的输出顺序吗？
 tags: JavaScript
 ---

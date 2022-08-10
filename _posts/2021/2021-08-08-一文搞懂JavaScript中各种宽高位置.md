@@ -1,4 +1,5 @@
 ---
+layout: mypost
 title: 一文搞懂JavaScript中各种宽高位置（全）
 tags: JavaScript
 ---
