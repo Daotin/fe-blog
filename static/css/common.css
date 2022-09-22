@@ -10,7 +10,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   transition: all 500ms ease;
   /* font-family: Consolas, 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif; */
-  font-family: 'Cascadia Code', Consolas, Helvetica, 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+  font-family: 'Cascadia Code', Consolas,Liberation Mono,Menlo,Courier,monospace, sans-serif;
 }
 body {
   max-width: 680px;
