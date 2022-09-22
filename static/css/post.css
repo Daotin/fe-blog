@@ -50,9 +50,9 @@
 }
 
 .page-post a {
-  color: #000000;
+  color: #ff7f7f;
   margin: 0 2px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #ff7f7f;
 }
 .page-post strong,
 .page-post b {
