@@ -102,7 +102,7 @@
   transition: all 500ms ease;
 }
 .page-post pre code {
-  font-size: 13px;
+  font-size: 12px;
   background-color: transparent !important;
   word-break: keep-all;
   padding: 0;
@@ -149,7 +149,7 @@
 }
 @media screen and (max-width: 560px) {
   .page-post {
-    font-size: 13px;
+    font-size: 14px;
   }
   .page-post pre code {
     font-size: 12px;
