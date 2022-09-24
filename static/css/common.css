@@ -90,7 +90,7 @@ input:-webkit-autofill {
   height: 1px;
   bottom: -2px;
   left: 0;
-  background-color: #333333;
+  background-color: #ff7f7f;
   visibility: hidden;
   transform: scaleX(0);
   transition: transform 200ms ease-in-out;
