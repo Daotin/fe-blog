@@ -1,6 +1,6 @@
 .page-post {
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.8;
   word-break: break-word;
 }
 .page-post .title {
@@ -22,19 +22,12 @@
 .page-post .post h1,
 .page-post .post h2 {
   font-weight: bold;
-  font-size: 17px;
+  font-size: 1.5em;
   position: relative;
   margin-top: 35px;
   margin-bottom: 10px;
   padding-bottom: 4px;
-  border-bottom: 1px solid #ececec;
-}
-.page-post .post h1::before,
-.page-post .post h2::before {
-  content: '#';
-  top: 0;
-  font-weight: bold;
-  padding-right: 6px;
+  border-bottom: 1px solid #d8dee4;
 }
 .page-post h3,
 .page-post h4,
