@@ -78,8 +78,8 @@ input:-webkit-autofill {
   background-color: #999999;
 }
 ::selection {
-  background-color: #4a4a4a;
-  color: #f9f9f9;
+  background-color: #ff7f7f;
+  color: #ffffff;
 }
 .hover-underline {
   position: relative;
