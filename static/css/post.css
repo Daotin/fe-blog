@@ -1,5 +1,5 @@
 .page-post {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.8;
   word-break: break-word;
 }
@@ -68,7 +68,7 @@
   max-width: 100%;
   margin: 0 auto;
   height: auto;
-  box-shadow: 0 0 5px #e0e0e0;
+  box-shadow: 0 0 20px #ddd;
   /* border: 1px solid #eee;
   border-radius: 4px; */
 }
@@ -90,10 +90,12 @@
   -o-tab-size: 4;
   tab-size: 4;
   line-height: 1.6;
+  border: 1px solid #ddd;
 }
 .page-post code {
-  font-size: 13px;
+  font-size: 14px;
   background-color: #eeeeee;
+  color: #ff7f7f;
   word-break: break-word;
   padding: 3px 5px;
   margin: 0 4px;
@@ -102,7 +104,7 @@
   transition: all 500ms ease;
 }
 .page-post pre code {
-  font-size: 12px;
+  font-size: 14px;
   background-color: transparent !important;
   word-break: keep-all;
   padding: 0;
