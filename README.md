@@ -1,4 +1,4 @@
-基于jekyll的个人博客站点：http://daotin.github.com ，主题风格本着 "simple is beautiful" 的原则。
+基于jekyll的个人博客站点：http://daotin.github.io ，主题风格本着 "simple is beautiful" 的原则。
 
 其他地方
 
