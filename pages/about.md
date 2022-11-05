@@ -3,14 +3,14 @@ layout: mypost
 title: 关于我
 ---
 
-<iframe src="//music.163.com/outchain/player?type=2&id=28445796&auto=0&height=66" frameborder="0" width="100%" height="86px"></iframe>
+<iframe src="//music.163.com/outchain/player?type=2&id=1970792395&auto=0&height=66" frameborder="0" width="100%" height="86px"></iframe>
 
 
 ```js
 const me = new Coder();
 
 // who am i?
-me.nick('前端队长');
+me.nick('程序员小廷');
 me.name('Daotin');
 me.job('Front-end Developer');
 
@@ -37,13 +37,12 @@ me.hasChild = false;
 ```
 
 
-你也可以从下面遇到我（全网同名）：
+你也可以从下面遇到我：
 
-- [微信公众号](https://www.jianguoyun.com/p/DVLba8YQjp3pCBiFhvwD)：万剑归宗处
 - [github](https://github.com/daotin) ：我的武器库
-- [知乎](https://www.zhihu.com/people/daotin) ：花街柳巷
+- [微信公众号](https://www.jianguoyun.com/p/DVLba8YQjp3pCBiFhvwD)：万剑归宗处
 - [掘金](https://juejin.im/user/2084329777534216) ：招兵买马
-- [CSDN](https://blog.csdn.net/lvonve) ：练武处
-- [博客园](https://www.cnblogs.com/lvonve) ：练武处
+- [知乎](https://www.zhihu.com/people/daotin) ：花街柳巷
+
 
 ![](https://gitee.com/daotin/img/raw/master/gzh.png)
