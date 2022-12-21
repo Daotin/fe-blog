@@ -81,7 +81,7 @@
   line-height: 1;
 }
 .page-post pre {
-  font-size: 0;
+  font-size: 12px;
   padding: 10px;
   overflow: auto;
   border-radius: 2px;
@@ -93,7 +93,7 @@
   border: 1px solid #ddd;
 }
 .page-post code {
-  font-size: 14px;
+  font-size: 12px;
   background-color: #eeeeee;
   color: #ff7f7f;
   word-break: break-word;
@@ -103,7 +103,7 @@
   transition: all 500ms ease;
 }
 .page-post pre code {
-  font-size: 14px;
+  font-size: 12px;
   background-color: transparent !important;
   word-break: keep-all;
   padding: 0;

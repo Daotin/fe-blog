@@ -62,7 +62,7 @@ textarea {
 pre,
 code {
   /* font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace; */
-  font-family: 'Cascadia Code', Consolas, Menlo, Courier, sans-serif;
+  font-family: Menlo,Monaco,Consolas,Courier New,monospace;
 }
 
 input:-webkit-autofill {
