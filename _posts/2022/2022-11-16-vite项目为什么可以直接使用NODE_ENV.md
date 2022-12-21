@@ -38,11 +38,11 @@ tags: vite
 
 由于我们执行的是 npm run serve，所以首先会断在 cli.js 中，创建服务的位置，可以看到调用`createServer`创建本地服务。
 
-![](../image/image_q4v_XXEBsG.png)
+![](/image/image_q4v_XXEBsG.png)
 
 继续 F5，进入`createServer`，会执行`resolveConfig`，其中参数`inlineConfig.mode` 就是我们 npm scrips 中指定的 mode，这里没有指定（执行的只是 npm run serve: vite）mode，所以这里为 undefined。
 
-![](../image/image_hV-XAHDpdP.png)
+![](/image/image_hV-XAHDpdP.png)
 
 经过一次判断 `mode === production`，不成立，此时 process.env.NODE_ENV 还是 undefined。
 
@@ -50,19 +50,19 @@ tags: vite
 
 进入`loadEnv`方法，这里 vite 会读取`.env`文件，然后，如果是“VITE \_”开头，会存入 env 变量中，如果是“NODE_ENV”变量，会设置`process.env.VITE_USER_NODE_ENV = value; `即设置的 NODE_ENV 的值。（这个`process.env.VITE_USER_NODE_ENV`就可以为我们所用）
 
-![](../image/image_m-XhuQ9psq.png)
+![](/image/image_m-XhuQ9psq.png)
 
 继续往下 F5，`loadEnv`完后，继续一个判断：因为我们在`.env`文件中没有定义 NODE_ENV 变量，所以`isProduction`是 false，所以这片代码过后，`process.env.NODE_ENV`还是 undefined。
 
-![](../image/image_yFWMQxnuWk.png)
+![](/image/image_yFWMQxnuWk.png)
 
 继续 F5，然后会走到一个`createContext`函数，这个就是关键所在。由于我们的`process.env.NODE_ENV`在之前一直为 undefined，所以 ctx.env 就是 undefined，于是`process.env.NODE_ENV`被赋值为 development。
 
-![](../image/image_xHJ0uyyGMp.png)
+![](/image/image_xHJ0uyyGMp.png)
 
 我们继续，经过多次`createContext`函数的进进出出，最后终于到了 tailwind 文件中，可以看到 NODE_ENV 的值为 development。
 
-![](../image/image_1GCggjsTOm.png)
+![](/image/image_1GCggjsTOm.png)
 
 这也是为什么不管是 serve 还是 build，我们一直在`tailwind.config.js`中打印的 NODE_ENV 都是 development 的原因。
 
