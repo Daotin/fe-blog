@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  max-width: 680px;
+  max-width: 800px;
   padding: 0 14px;
   margin: 0 auto;
 }
@@ -85,7 +85,9 @@ input:-webkit-autofill {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ff7f7f;
+  background-color: #ddd;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 ::selection {
