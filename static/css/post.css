@@ -44,12 +44,12 @@
 }
 
 .page-post a {
-  color: #ff7f7f;
+  color: #42b883;
   margin: 0 2px;
-  border-bottom: 1px solid #ff7f7f66;
+  border-bottom: 1px solid #42b88366;
 }
 .page-post a:hover {
-  border-bottom: 1px solid #ff7f7f;
+  border-bottom: 1px solid #42b883;
 }
 .page-post strong,
 .page-post b {
@@ -98,8 +98,8 @@
 }
 .page-post code {
   font-size: 14px;
-  background-color: #ff7f7f1a;
-  color: #ff7f7f;
+  background-color: #42b8830d;
+  color: #42b883;
   word-break: break-word;
   padding: 3px 5px;
   margin: 0 4px;
