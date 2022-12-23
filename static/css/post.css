@@ -53,7 +53,7 @@
 }
 .page-post strong,
 .page-post b {
-  color: #000000;
+  color: #333;
 }
 .page-post .post ul {
   margin-left: 16px;
@@ -88,7 +88,7 @@
   font-size: 14px;
   padding: 10px;
   overflow: auto;
-  border-radius: 2px;
+  border-radius: 4px;
   max-height: 610px;
   -moz-tab-size: 4;
   -o-tab-size: 4;

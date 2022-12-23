@@ -1,6 +1,6 @@
 html {
   color: #333333;
-  background: #ffffff;
+  background: #f4f5f5;
   scroll-behavior: smooth;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -16,8 +16,9 @@ html {
 
 body {
   max-width: 800px;
-  padding: 0 14px;
+  padding: 0 30px;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 * {
@@ -122,10 +123,12 @@ input:-webkit-autofill {
 }
 
 .header {
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #d8dee4;
 }
 
 .header .logo {
