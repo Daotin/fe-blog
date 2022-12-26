@@ -20,6 +20,7 @@ body {
   padding: 0 30px;
   margin: 0 auto;
   background-color: #fff;
+  box-shadow: 1px 1px 8px rgb(0 0 0 / 15%);
 }
 
 * {
