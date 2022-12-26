@@ -11,7 +11,8 @@ html {
   transition: all 500ms ease;
   /* font-family: Consolas, 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif; */
   /* font-family: 'Cascadia Code', 'PingFang SC', Consolas, Menlo, Courier, sans-serif; */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; */
+  font-family: -apple-system, "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 body {
@@ -92,7 +93,7 @@ input:-webkit-autofill {
 }
 
 ::selection {
-  background-color: #ff7f7f;
+  background-color: #ff3f3f;
   color: #ffffff;
 }
 
@@ -107,7 +108,7 @@ input:-webkit-autofill {
   height: 1px;
   bottom: -2px;
   left: 0;
-  background-color: #ff7f7f;
+  background-color: #ff3f3f;
   visibility: hidden;
   transform: scaleX(0);
   transition: transform 200ms ease-in-out;
@@ -119,7 +120,7 @@ input:-webkit-autofill {
 }
 
 .hover-underline:nth-of-type(5) {
-  color: #ff7f7f;
+  color: #ff3f3f;
 }
 
 .header {

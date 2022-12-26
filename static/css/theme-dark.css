@@ -2,6 +2,9 @@ html.dark {
   color: #c9d1d9;
   background: #0d1117;
 }
+html.dark body{
+  background: #1b222e;
+}
 html.dark ::selection {
   background-color: #327bd4;
   color: #ffffff;
