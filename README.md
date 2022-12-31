@@ -1,9 +1,4 @@
-基于jekyll的个人博客站点：https://daotin.github.io ，主题风格本着 "simple is beautiful" 的原则。
+个人博客：https://daotin.github.io，记录前端学习心得。
 
-其他地方
-
-- 掘金：[https://juejin.cn/user/2084329777534216](https://juejin.cn/user/2084329777534216)
-- 知乎：[https://zhihu.com/people/daotin](https://zhihu.com/people/daotin)
-- 博客园：[https://www.cnblogs.com/lvonve/](https://www.cnblogs.com/lvonve/)
-- CSDN：[https://blog.csdn.net/lvonve](https://blog.csdn.net/lvonve)
+其他博客：[掘金](https://juejin.cn/user/2084329777534216)，[知乎](https://zhihu.com/people/daotin)
 
