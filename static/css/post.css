@@ -4,7 +4,6 @@
   word-break: break-word;
 }
 .page-post .title {
-  font-size: 18px;
   font-weight: bold;
   color: #666666;
 }
@@ -21,6 +20,7 @@
 }
 .page-post .post h1,
 .page-post .post h2 {
+  color: #666666;
   font-weight: bold;
   font-size: 1.5em;
   position: relative;
@@ -33,7 +33,6 @@
 .page-post h4,
 .page-post h5,
 .page-post h6 {
-  font-size: 15px;
   font-weight: bold;
 }
 .page-post blockquote {

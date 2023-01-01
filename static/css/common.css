@@ -1,5 +1,5 @@
 html {
-  color: #333333;
+  color: #333;
   background: #f4f5f5;
   scroll-behavior: smooth;
   -ms-text-size-adjust: 100%;
@@ -93,10 +93,10 @@ input:-webkit-autofill {
   cursor: pointer;
 }
 
-::selection {
+/* ::selection {
   background-color: #ff3f3f;
   color: #ffffff;
-}
+} */
 
 .hover-underline {
   position: relative;
