@@ -41,6 +41,11 @@ html.dark .page-post h5,
 html.dark .page-post h6 {
   color: #dadfe4;
 }
+
+html.dark .page-post .post h1, 
+html.dark .page-post .post h2 {
+  border-color: #565a5d;
+}
 html.dark .page-post img {
   box-shadow: none;
 }
