@@ -54,18 +54,7 @@
 .page-post b {
   color: #333;
 }
-.page-post .post ul {
-  margin-left: 16px;
-}
-.page-post .post ol {
-  margin-left: 23px;
-}
-.page-post ul li {
-  list-style: disc;
-}
-.page-post ol li {
-  list-style: decimal;
-}
+
 .page-post img {
   display: block;
   max-width: 100%;
@@ -160,5 +149,42 @@
   }
   .page-post .post > * {
     margin: 15px 0;
+  }
+}
+
+
+/* 目录悬浮在右边 */
+
+.page-post .post ul {
+  margin-left: 16px;
+}
+.page-post .post ol {
+  margin-left: 23px;
+}
+.page-post ul li {
+  list-style: disc;
+}
+.page-post ol li {
+  list-style: none;
+}
+
+#markdown-toc {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  font-size: 14px;
+}
+
+#markdown-toc li {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1300px) {
+  #markdown-toc {
+    display: none;
   }
 }
