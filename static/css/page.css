@@ -42,6 +42,10 @@
   padding: 1px 8px;
   border-radius: 4px;
 }
+html.dark .list-post li .tags a {
+  background-color: rgba(240, 246, 252, 0.15);
+  color: #c9d1d9;
+}
 .list-category h2 {
   font-size: 15px;
   font-weight: bold;
