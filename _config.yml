@@ -5,7 +5,7 @@ title: Daotin's Blog
 description: Daotin的个人博客
 keywords: Daotin,前端,Web,Html,JavaScript
 author: Daotin
-footerText: 'Copyright © 2021'
+footerText: "Copyright © 2021"
 
 # 这些不要动
 permalink: /posts/:year/:month/:day/:title.html
@@ -13,24 +13,34 @@ kramdown:
   auto_ids: true
   input: GFM
   syntax_highlighter: rouge
-exclude: ['CNAME', 'README.md', 'LICENSE', '_site', 'dist', 'Gemfile', 'Gemfile.lock', 'blog.sh']
+exclude:
+  [
+    "CNAME",
+    "README.md",
+    "LICENSE",
+    "_site",
+    "dist",
+    "Gemfile",
+    "Gemfile.lock",
+    "blog.sh",
+  ]
 
 # 域名配置
 # baseurl配置,如果网站部署在根目录下的其他目录中，请设置为 /目录名
-domainUrl: 'https://daotin.github.io'
-baseurl: ''
+domainUrl: "https://daotin.github.io"
+baseurl: ""
 
 # 吐个槽地址，会在chat页面中重定向到该地址
-tucaoUrl: 'https://support.qq.com/product/380958' # https://support.qq.com/product/86335
+tucaoUrl: "https://support.qq.com/product/380958" # https://support.qq.com/product/86335
 
 # 菜单
 # 必填字段 title: '文本' url: '链接'
-# 可选字段 target: '_blank' 新页面打开 
+# 可选字段 target: '_blank' 新页面打开
 menu:
   - title: 首页
     url: /
   - title: 归类
-    url: /pages/categories.html
+    url: /pages/tags.html
   # - title: 友链
   #   url: /pages/links.html
   - title: 留言
@@ -88,4 +98,3 @@ links:
   #   url: https://wenn.tech
   # - title: Congbo's Blog
   #   url: https://congbo.site
-
