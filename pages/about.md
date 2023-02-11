@@ -10,7 +10,7 @@ title: 关于我
 const me = new Coder();
 
 // who am i?
-me.nick("Daotin");
+me.nick("Daotin | f9g");
 me.name("前端队长小冯");
 me.job("Front-end Developer");
 
