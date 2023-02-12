@@ -35,3 +35,9 @@ me.hobby = ["数字花园", "摄影"];
 me.isMarry = true;
 me.hasChild = false;
 ```
+
+## 我的专栏
+
+|项目|描述|地址|
+|-|-|-|
+|从零搭建Vue3项目|从零搭建前端工程化项目专栏笔记|[https://daotin.github.io/fe-series-notes/engineer/](https://daotin.github.io/fe-series-notes/engineer/)|
