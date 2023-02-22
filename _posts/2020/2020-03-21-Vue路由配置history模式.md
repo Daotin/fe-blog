@@ -61,6 +61,24 @@ devServer:{
 }
 
 ```
+## 服务器配置
+
+webpack配置history只是在本地dev模式下成效，如果发布到生产环境，需要对nginx进行配置。
+
+```
+// 把所有请求都被重定向到 index.html
+location / {
+  try_files $uri $uri/ /index.html;
+}
+```
+
+> 为什么在history模式下所有请求都被重定向到 index.html?
+
+参考：
+- https://router.vuejs.org/zh/guide/essentials/history-mode.html
+- https://juejin.cn/post/7091577999505489956
+
+
 
 
 （完）
