@@ -27,7 +27,7 @@
   text-overflow: ellipsis;
 }
 .list-post li .title a {
-  font-size: 15px;
+  font-size: 18px;
 }
 .list-post li .tags {
   flex-shrink: 0;
@@ -35,7 +35,7 @@
   margin-left: 10px;
 }
 .list-post li .tags a {
-  font-size: 12px;
+  font-size: 14px;
   color: #999;
   margin-left: 8px;
   background: #eee;
@@ -128,7 +128,7 @@ html.dark .list-post li .tags a {
     padding: 6px 0;
   }
   .list-post li .title a {
-    font-size: 14px;
+    font-size: 18px;
   }
   .list-post .categories {
     display: none;

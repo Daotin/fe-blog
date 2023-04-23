@@ -1,5 +1,5 @@
 .page-post {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
   word-break: break-word;
 }
@@ -8,7 +8,7 @@
   color: #666666;
 }
 .page-post .subtitle {
-  font-size: 12px;
+  font-size: 14px;
   color: #999999;
 }
 .page-post .post > * {
@@ -162,10 +162,10 @@
   margin-left: 23px;
 }
 .page-post ul li {
-  list-style: disc;
+  list-style: inside disc;
 }
 .page-post ol li {
-  list-style: none;
+  list-style: inside decimal;
 }
 
 #markdown-toc {
