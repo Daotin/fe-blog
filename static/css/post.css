@@ -44,7 +44,7 @@
 }
 
 .page-post blockquote.info {
-  border-left: 6px solid 6px solid rgb(76,144,240);
+  border-left: 6px solid rgb(76,144,240);
   background-color: 6px solid rgb(76,144,240, 0.1);
   padding: 9px 9px 9px 15px;
   color: #666;
@@ -52,7 +52,7 @@
 }
 
 .page-post blockquote.warning {
-  border-left: 6px solid 6px solid rgb(251,179,96);
+  border-left: 6px solid rgb(251,179,96);
   background-color: 6px solid rgb(251,179,96, 0.1);
   padding: 9px 9px 9px 15px;
   color: #666;
@@ -60,7 +60,7 @@
 }
 
 .page-post blockquote.error {
-  border-left: 6px solid 6px solid rgb(255,63,63);
+  border-left: 6px solid rgb(255,63,63);
   background-color: 6px solid rgb(255,63,63, 0.1);
   padding: 9px 9px 9px 15px;
   color: #666;
