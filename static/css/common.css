@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "lxgw";
-  src: url("../font/LXGWWenKaiLite-Regular.woff2");
-}
-
 html {
   color: #333;
   background: #f4f5f5;
@@ -17,7 +12,7 @@ html {
   /* font-family: Consolas, 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif; */
   /* font-family: 'Cascadia Code', 'PingFang SC', Consolas, Menlo, Courier, sans-serif; */
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; */
-  font-family: "lxgw", -apple-system, "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: -apple-system, "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 body {
