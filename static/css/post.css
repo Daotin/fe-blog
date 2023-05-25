@@ -71,6 +71,9 @@
   color: #ff3f3f;
   margin: 0 2px;
 }
+.page-post a:hover {
+  border-bottom: 1px solid #c9d1d9;
+}
 .page-post strong,
 .page-post b {
   color: #333;

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: mypost
 title: 留言板
 ---
 

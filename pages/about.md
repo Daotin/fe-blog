@@ -1,43 +1,28 @@
 ---
-layout: page
+layout: mypost
 title: 关于我
 ---
 
 <!--
 <iframe src="//music.163.com/outchain/player?type=2&id=1970792395&auto=0&height=66" frameborder="0" width="100%" height="86px"></iframe> -->
 
-```js
-const me = new Coder();
+## Hi 👋 My name is Daotin.
 
-// who am i?
-me.nick("Daotin | f9g");
-me.name("前端队长小冯");
-me.job("Front-end Developer");
+### Front-end Developer.
 
-// contact me
-me.email("daotin@qq.com");
-me.wechat("isdaotin");
+- 🌍 I'm based in Wuhan
+- ✉️ You can contact me at `daotin@qq.com`
+- 🧠 I'm learning Vue.js, Node.js
+- ⚡ My Blog is https://daotin.github.io
+- 🛠 Skills: HTML/CSS/JavaScript/Node.js/Vue.js
+- 🎨 Hobby: AIGC, ChatGPT, Midjourney and so on
 
-// my social media
-me.github("https://github.com/daotin");
-me.blog(["https://daotin.github.io/"]);
-me.juejin("https://juejin.cn/user/2084329777534216");
-me.zhihu("https://zhihu.com/people/daotin");
+### Socials
 
-// my skill
-me.language("HTML/CSS/JavaScript/NodeJS");
-me.skill(["JavaScript", "Vue", "前端工程化"]);
+- [Twitter](https://twitter.com/DaotinV)
+- [Juejin](https://juejin.cn/user/2084329777534216)
 
-// my hobby
-me.hobby = ["数字花园", "摄影"];
+### Projects
 
-// others
-me.isMarry = true;
-me.hasChild = false;
-```
-
-## 我的专栏
-
-| 项目               | 描述                           | 地址                                                                                                     |
-| ------------------ | ------------------------------ | -------------------------------------------------------------------------------------------------------- |
-| 从零搭建 Vue3 项目 | 从零搭建前端工程化项目专栏笔记 | [https://daotin.github.io/fe-series-notes/engineer/](https://daotin.github.io/fe-series-notes/engineer/) |
+- [从零搭建 Vue3 项目工程](https://daotin.github.io/fe-series-notes/engineer/)
+- [前端工程化笔记](https://daotin.github.io/fe-series-notes/fe-engine/)
