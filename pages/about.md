@@ -1,5 +1,5 @@
 ---
-layout: mypost
+layout: page
 title: 关于我
 ---
 
@@ -38,6 +38,6 @@ me.hasChild = false;
 
 ## 我的专栏
 
-|项目|描述|地址|
-|-|-|-|
-|从零搭建Vue3项目|从零搭建前端工程化项目专栏笔记|[https://daotin.github.io/fe-series-notes/engineer/](https://daotin.github.io/fe-series-notes/engineer/)|
+| 项目               | 描述                           | 地址                                                                                                     |
+| ------------------ | ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| 从零搭建 Vue3 项目 | 从零搭建前端工程化项目专栏笔记 | [https://daotin.github.io/fe-series-notes/engineer/](https://daotin.github.io/fe-series-notes/engineer/) |

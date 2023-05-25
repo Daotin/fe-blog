@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-{% include head.html -%}
-<body ondragstart="return false;">
-{% include header.html -%}
-<div class="page page-post">
-  <h1 class="title" id="{{ page.title }}">{{ page.title }}</h1>
-  {% if page.date %}
-  <div class="subtitle">{{site.author}} 于 {{ page.date | date: "%Y-%m-%d" }} 发布 <a href="https://github.com/Daotin/daotin.github.io/edit/master/{{ page.path }}" target="_blank">编辑</a></div>
-  {% endif %}
-  <div class="post">
-    {{ content }}
-  </div>
-  {% if site.extAdsense -%}
-  <div class="adsense" style="overflow: hidden;">
-    {% include ext-adsense.html -%}
-  </div>
-  {% endif %}
-</div>
-{% include footer.html -%}
-{% include script.html -%}
-</body>
+  {% include head.html -%}
+  <body ondragstart="return false;">
+    {% include header.html -%}
+    <div class="page page-post">
+      <h1 class="title" id="{{ page.title }}">{{ page.title }}</h1>
+      {% if page.date %}
+      <div class="subtitle">
+        {{site.author}} 于 {{ page.date | date: "%Y-%m-%d" }} 发布
+        <a
+          class="hover-underline"
+          href="https://github.com/Daotin/daotin.github.io/edit/master/{{ page.path }}"
+          target="_blank"
+          >编辑</a
+        >
+      </div>
+      {% endif %}
+      <div class="post">{{ content }}</div>
+      {% if site.extAdsense -%}
+      <div class="adsense" style="overflow: hidden">
+        {% include ext-adsense.html -%}
+      </div>
+      {% endif %}
+    </div>
+    {% include footer.html -%} {% include script.html -%}
+  </body>
 </html>
