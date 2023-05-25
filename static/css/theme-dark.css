@@ -60,11 +60,36 @@ html.dark .page-post strong,
 html.dark .page-post b {
   color: #ffffff;
 }
+
 html.dark .page-post blockquote {
   border-left: 3px solid #3b434b;
   background-color: rgba(59, 67, 75, 0.15);
   color: #8b949e;
 }
+html.dark .page-post blockquote.info {
+  border-left: 4px solid rgb(76,144,240);
+  background-color: rgba(76,144,240, 0.2);
+  padding: 9px 9px 9px 15px;
+  color: #dadfe4;
+  border-radius: 4px;
+}
+
+html.dark .page-post blockquote.warning {
+  border-left: 4px solid rgb(251,179,96);
+  background-color: rgba(251,179,96, 0.2);
+  padding: 9px 9px 9px 15px;
+  color: #dadfe4;
+  border-radius: 4px;
+}
+
+html.dark .page-post blockquote.error {
+  border-left: 4px solid rgb(255,63,63);
+  background-color: rgba(255,63,63, 0.2);
+  padding: 9px 9px 9px 15px;
+  color: #dadfe4;
+  border-radius: 4px;
+}
+
 html.dark .page-post .table-container {
   border: 1px solid #3b434b;
 }
