@@ -35,7 +35,7 @@
 .page-post h6 {
   font-weight: bold;
 }
-.page-post blockquote {
+.page-post dtquote {
   border-left: 4px solid #999;
   background-color: #99999933;
   padding: 9px 9px 9px 15px;
@@ -43,7 +43,7 @@
   border-radius: 4px;
 }
 
-.page-post blockquote.info {
+.page-post dtquote.info {
   border-left: 4px solid rgb(76,144,240);
   background-color: rgba(76,144,240, 0.2);
   padding: 9px 9px 9px 15px;
@@ -51,7 +51,7 @@
   border-radius: 4px;
 }
 
-.page-post blockquote.warning {
+.page-post dtquote.warning {
   border-left: 4px solid rgb(251,179,96);
   background-color: rgba(251,179,96, 0.2);
   padding: 9px 9px 9px 15px;
@@ -59,7 +59,7 @@
   border-radius: 4px;
 }
 
-.page-post blockquote.error {
+.page-post dtquote.error {
   border-left: 4px solid rgb(255,63,63);
   background-color: rgba(255,63,63, 0.2);
   padding: 9px 9px 9px 15px;

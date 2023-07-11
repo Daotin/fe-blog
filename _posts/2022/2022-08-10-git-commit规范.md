@@ -52,8 +52,7 @@ commitizen init cz-conventional-changelog --save-dev --save-exact
 # 3、git add后，输入 cz 即可使用
 ```
 
-<blockquote class="info">
-可以创建一个node脚本来执行上面步骤，简化操作：（🛑注意：脚本未经过验证）
+> 💡 可以创建一个 node 脚本来执行上面步骤，简化操作：（🛑**注意：脚本未经过验证**）
 
 ```js
 const { execSync } = require("child_process");
@@ -103,8 +102,6 @@ fs.writeFileSync("commitlint.config.js", commitlintConfigContent);
 executeCommand("npm install conventional-changelog-cli -g");
 executeCommand("npm install conventional-changelog-cli -D");
 ```
-
-</blockquote>
 
 ### 2、vscode 安装插件（二选一）
 
