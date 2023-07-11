@@ -52,6 +52,60 @@ commitizen init cz-conventional-changelog --save-dev --save-exact
 # 3、git add后，输入 cz 即可使用
 ```
 
+<blockquote class="info">
+可以创建一个node脚本来执行上面步骤，简化操作：（🛑注意：脚本未经过验证）
+
+```js
+const { execSync } = require("child_process");
+const fs = require("fs");
+const path = require("path");
+
+const executeCommand = (command) => {
+  console.log(`执行命令: ${command}`);
+  try {
+    execSync(command, { stdio: "inherit" });
+  } catch (error) {
+    console.error(`执行命令失败: ${command}`);
+    process.exit(1);
+  }
+};
+
+// 1. 安装husky
+executeCommand("npm install husky -D");
+
+// 2. 配置husky
+executeCommand("npx husky-init && npm install");
+
+// 3. 删除 .husky/pre-commit 中的 npm test
+const preCommitPath = path.resolve(".husky/pre-commit");
+const preCommitContent = fs.readFileSync(preCommitPath, "utf8");
+const updatedPreCommitContent = preCommitContent.replace(/npm test\n/, "");
+fs.writeFileSync(preCommitPath, updatedPreCommitContent);
+
+// 4. 添加 commit-msg hook
+executeCommand(
+  "npx husky add .husky/commit-msg 'npx --no -- commitlint --edit \"$1\"'"
+);
+
+// 5. 安装 commitlint
+executeCommand(
+  "npm install --save-dev @commitlint/config-conventional @commitlint/cli"
+);
+
+// 6. 在工程目录下创建 commitlint.config.js
+const commitlintConfigContent = `module.exports = {
+  extends: ['@commitlint/config-conventional'],
+};`;
+
+fs.writeFileSync("commitlint.config.js", commitlintConfigContent);
+
+// 7. 安装自动生成changelog
+executeCommand("npm install conventional-changelog-cli -g");
+executeCommand("npm install conventional-changelog-cli -D");
+```
+
+</blockquote>
+
 ### 2、vscode 安装插件（二选一）
 
 - [Commit Message Editor](https://marketplace.visualstudio.com/items?itemName=adam-bender.commit-message-editor)
