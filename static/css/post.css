@@ -35,38 +35,13 @@
 .page-post h6 {
   font-weight: bold;
 }
-.page-post dtquote {
+.page-post blockquote {
   border-left: 4px solid #999;
   background-color: #99999933;
   padding: 9px 9px 9px 15px;
   color: #666;
   border-radius: 4px;
 }
-
-.page-post dtquote.info {
-  border-left: 4px solid rgb(76,144,240);
-  background-color: rgba(76,144,240, 0.2);
-  padding: 9px 9px 9px 15px;
-  color: #666;
-  border-radius: 4px;
-}
-
-.page-post dtquote.warning {
-  border-left: 4px solid rgb(251,179,96);
-  background-color: rgba(251,179,96, 0.2);
-  padding: 9px 9px 9px 15px;
-  color: #666;
-  border-radius: 4px;
-}
-
-.page-post dtquote.error {
-  border-left: 4px solid rgb(255,63,63);
-  background-color: rgba(255,63,63, 0.2);
-  padding: 9px 9px 9px 15px;
-  color: #666;
-  border-radius: 4px;
-}
-
 .page-post a {
   background: linear-gradient(90deg, #ff3f3f, #ff3f3f), linear-gradient(90deg, #ff3f3f, #fc0);
   background-size: 100% 1px, 0 3px;
