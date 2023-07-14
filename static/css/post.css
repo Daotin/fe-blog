@@ -36,8 +36,13 @@
   font-weight: bold;
 }
 .page-post blockquote {
-  border-left: 4px solid #999;
+  /* border-left: 4px solid #999;
   background-color: #99999933;
+  padding: 9px 9px 9px 15px;
+  color: #666;
+  border-radius: 4px; */
+  border-left: 4px solid rgb(251,179,96);
+  background-color: rgba(251,179,96, 0.2);
   padding: 9px 9px 9px 15px;
   color: #666;
   border-radius: 4px;

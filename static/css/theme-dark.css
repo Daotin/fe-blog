@@ -73,9 +73,13 @@ html.dark .page-post b {
 }
 
 html.dark .page-post blockquote {
-  border-left: 3px solid #3b434b;
+  /* border-left: 3px solid #3b434b;
   background-color: rgba(59, 67, 75, 0.15);
-  color: #8b949e;
+  color: #8b949e; */
+
+  border-left: 4px solid rgb(251,179,96);
+  background-color: rgba(251,179,96, 0.2);
+  color: #dadfe4;
 }
 
 html.dark .page-post .table-container {
