@@ -1,3 +1,10 @@
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: "dfdk";font-weight: 400;src: url("//at.alicdn.com/wf/webfont/TXwLICgtYjEt/CnxfuJsAm7EL.woff2") format("woff2"),
+  url("//at.alicdn.com/wf/webfont/TXwLICgtYjEt/ZudAFZTimKNX.woff") format("woff");
+  font-display: swap;
+}
+
 html {
   color: #333;
   background: #f4f5f5;
@@ -12,7 +19,7 @@ html {
   /* font-family: Consolas, 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif; */
   /* font-family: 'Cascadia Code', 'PingFang SC', Consolas, Menlo, Courier, sans-serif; */
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; */
-  font-family: -apple-system, "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "dfdk", -apple-system, "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 body {
