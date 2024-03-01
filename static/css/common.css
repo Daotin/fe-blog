@@ -1,11 +1,11 @@
 /* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
-/* @font-face {
-  font-family: "DongFangDaKai";
+@font-face {
+  font-family: "KingHwaOldSong";
   font-weight: 400;
   src: 
-    url("../font/Alimama_DongFangDaKai_Regular.woff2") format("woff2");
+    url("../font/KingHwa_OldSong.woff2") format("woff2");
   font-display: swap;
-} */
+}
 
 html {
   color: #333;
@@ -21,7 +21,7 @@ html {
   /* font-family: Consolas, 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif; */
   /* font-family: 'Cascadia Code', 'PingFang SC', Consolas, Menlo, Courier, sans-serif; */
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; */
-  font-family: -apple-system, "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: KingHwaOldSong, -apple-system, "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 body {
