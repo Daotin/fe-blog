@@ -4,8 +4,6 @@ title: 关于ChatGPT结构化prompt
 tags: ChatGPT
 ---
 
-![](/image/2022/1.png)
-
 ## 为什么需要结构化 prompt
 
 最近在做大模型相关的产品需求时，发现用户实际对输出的结果反馈效果并不好。
