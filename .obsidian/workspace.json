@@ -1,0 +1,183 @@
+{
+  "main": {
+    "id": "16ff30e7aaa43c41",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d18a376528c4e57",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b331bce0ede0a0db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2023/2023-11-05-优先使用webp格式.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b1a398796ce4a2ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2000-01-01-template.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "012bb4a34fe88ebf",
+    "type": "split",
+    "children": [
+      {
+        "id": "9698605877a8d1ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "757c63fa5ed1abb9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "221b210d4c0281b5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e87f11d62498906a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 271.5
+  },
+  "right": {
+    "id": "7e1a9fb3bdb9d9cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "f14f95c6fcd0f8f4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55164e1d4f46c15f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/2023/2023-11-05-优先使用webp格式.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ed8e2f09e680f6e1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_posts/2023/2023-11-05-优先使用webp格式.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cb1a90408e644d56",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a721837c3b40d5b8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/2023/2023-11-05-优先使用webp格式.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "b331bce0ede0a0db",
+  "lastOpenFiles": [
+    "_posts/2024/2024-03-11-pnpm.md",
+    "_posts/2024/2024-03-26-el-tree搜索显示子节点.md",
+    "_posts/2024/2024-04-08-deep-usage.md",
+    "_posts/2000-01-01-template.md",
+    "_posts/2023/2023-11-05-优先使用webp格式.md",
+    "_posts/2023/2023-07-01-批量请求数据.md",
+    "_posts/2023/2023-08-21-前端debug技巧.md",
+    "image/2024/2024-1.png",
+    "image/2023/img20230403150415.png",
+    "image/2023/img20230403150233.png",
+    "image/2023/img20230331212259.png",
+    "image/2023/img20230331212239.png",
+    "image/2023/chiplist.jpg",
+    "image/2023/img20230414151621.png",
+    "image/2023/img20230404190235.png",
+    "image/2023/img20230404165308.png",
+    "image/2023/2023-08-17-11-10-34.png",
+    "_posts/2000-01-01-主题预览.md",
+    "_posts/2023/2023-08-28-安装一个依赖失败如何分析.md"
+  ]
+}
