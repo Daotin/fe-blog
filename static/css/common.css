@@ -129,7 +129,7 @@ input:-webkit-autofill {
   transform: scaleX(1);
 }
 
-.hover-underline:nth-of-type(5) {
+.hover-underline:last-of-type {
   color: #ff3f3f;
 }
 
