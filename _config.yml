@@ -1,11 +1,11 @@
 encoding: utf-8
 
 # SEO相关信息
-title: Daotin's Blog
-description: Daotin的个人博客
-keywords: Daotin,前端,Web,Html,JavaScript
+title: 前端队长の技术博客
+description: 前端队长の技术博客
+keywords: Daotin,前端,Web,Html,JavaScript,Vue,React,Node,Webpack,前端开发,前端工程师,前端博客,前端技术,前端队长
 author: Daotin
-footerText: "Copyright © 2021"
+footerText: "Copyright © 2024"
 
 # 这些不要动
 permalink: /posts/:year/:month/:day/:title.html
@@ -41,12 +41,12 @@ menu:
     url: /
   - title: 归类
     url: /pages/tags.html
-  # - title: 友链
-  #   url: /pages/links.html
   - title: 留言
     url: /pages/chat.html
   - title: 关于
     url: /pages/about.html
+  - title: 项目
+    url: /pages/project.html
   - title: 搜索
     url: /pages/search.html
 

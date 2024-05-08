@@ -25,4 +25,3 @@ title: 关于我
 ### Projects
 
 - [从零搭建 Vue3 项目工程](https://daotin.github.io/fe-series-notes/engineer/)
-- [前端工程化笔记](https://daotin.github.io/fe-series-notes/fe-engine/)
