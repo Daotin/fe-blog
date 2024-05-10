@@ -15,10 +15,10 @@ title: 首页
         </ul>
         </div>
       {% endif %}
+      {% assign count = 0 %}
       <div class="list-post">
         <h2 id="{{ post_year }}">{{ post_year }} ({{ count }})</h2>
         <ul>
-      {% assign count = 0 %}
     {% endif %}
     <li>
       <span class="date">{{ post.date | date: "%Y/%m/%d" }}</span>
@@ -32,10 +32,9 @@ title: 首页
       </div>
     </li>
     {% assign count = count | plus: 1 %}
-
     {% if forloop.last or post_previous_year != post_year %}
       </ul>
-    </div>
+      </div>
     {% endif %}
   {% endfor %}
 </div>
