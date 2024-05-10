@@ -9,7 +9,7 @@ title: 首页
   forloop.first or post_next_year != post_year -%}
   <div class="list-post">
     <!-- 后面加入当年发布的post个数 -->
-    <h2 id="{{post_year}}">{{post_year}} ({{post_count}})</h2>
+    <h2 id="{{post_year}}">{{post_year}} ({{post.length}})</h2>
     <ul>
       {%- endif %}
       <li>

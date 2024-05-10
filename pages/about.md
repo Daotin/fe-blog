@@ -19,9 +19,8 @@ title: 关于我
 
 ### Socials
 
-- [Twitter](https://twitter.com/DaotinV)
-- [Juejin](https://juejin.cn/user/2084329777534216)
+- [掘金](https://juejin.cn/user/2084329777534216)
+- [知乎](https://www.zhihu.com/people/daotin)
 
-### Projects
 
-- [从零搭建 Vue3 项目工程](https://daotin.github.io/fe-series-notes/engineer/)
+
