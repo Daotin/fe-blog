@@ -1,6 +1,6 @@
 ---
 layout: mypost
-title: keep-alive的应用
+title: keep-alive的基础应用
 tags:
   - Vue
 ---
@@ -21,7 +21,7 @@ keep-alive的基本概念：
 
 ---
 
-跟项目精力沟通，有三种方式：
+跟项目经理沟通，有三种方式：
 
 1、全部页面缓存
 
