@@ -1,14 +1,16 @@
 ---
+layout: mypost
 title: 自定义浏览器滚动条样式（兼容chrome和firefox）
 tags: css
 ---
 
 1. 目录
-{:toc}
+   {:toc}
 
 <!--more-->
 
 ## 问题描述
+
 浏览器默认的滚动条样式太丑了，而且不同的浏览器下滚动条的样式也不一样，为了美观和统一，必须修改滚动条的样式。
 
 有人问，为什么不自己写一个滚动条？
@@ -18,6 +20,7 @@ tags: css
 其二，自己写太麻烦了吧，能用默认的为什么不用呢 0.o
 
 ## 问题分析
+
 既然要修改默认滚动条的样式，就需要了解滚动条的样式都有哪些属性可以修改，以及这些属性分别对应了滚动条的哪些部位？
 
 下面有一张图可以很清楚的看到它们的对应关系：
@@ -38,29 +41,26 @@ tags: css
 
 ## 解决方案
 
-于是对于chrome，我们可以这样修改滚动条样式：
+于是对于 chrome，我们可以这样修改滚动条样式：
 
 ```css
 /*定义整个滚动条高宽及背景：高宽分别对应横竖滚动条的尺寸*/
-::-webkit-scrollbar
-{
-    width:10px;
-    background-color:#F5F5F5;
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
 }
 /*定义滚动条轨道：内阴影+圆角*/
-::-webkit-scrollbar-track
-{
-    background-color:#F5F5F5;
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
 }
 /*定义滑块：内阴影+圆角*/
-::-webkit-scrollbar-thumb
-{
-    border-radius:10px;
-    background-color:#555;
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #555;
 }
 ```
 
-一般我们这样设置这几个主要属性就OK了，但是如果你想更详细的css属性，也有：
+一般我们这样设置这几个主要属性就 OK 了，但是如果你想更详细的 css 属性，也有：
 
 ```css
 :horizontal //水平方向的滚动条
@@ -79,17 +79,19 @@ tags: css
 用法如下：
 
 ```css
-::-webkit-scrollbar-track-piece:start {}
-::-webkit-scrollbar-thumb:window-inactive {}
-::-webkit-scrollbar-button:horizontal:decrement:hover {}
+::-webkit-scrollbar-track-piece:start {
+}
+::-webkit-scrollbar-thumb:window-inactive {
+}
+::-webkit-scrollbar-button:horizontal:decrement:hover {
+}
 ```
-
 
 ## 兼容性
 
 ### IE
 
-对于IE，目前只找到修改滚动条各种属性的颜色，未找到修改样式的地方。
+对于 IE，目前只找到修改滚动条各种属性的颜色，未找到修改样式的地方。
 
 具体可修改的颜色如下：
 
@@ -99,50 +101,50 @@ tags: css
 
 ![1652388623-5a5711b6cf239_articlex](https://user-images.githubusercontent.com/23518990/72046028-7a16a400-32f2-11ea-931e-40e64e7d6fa8.png)
 
-
 代码：
 
 ```css
 .ie-div {
-   scrollbar-arrow-color: #f4ae21; /*三角箭头的颜色*/   
-   scrollbar-face-color: #333; /*立体滚动条的颜色*/   
-   scrollbar-3dlight-color: #666; /*立体滚动条亮边的颜色*/   
-   scrollbar-highlight-color: #666; /*滚动条空白部分的颜色*/   
-   scrollbar-shadow-color: #999; /*立体滚动条阴影的颜色*/   
-   scrollbar-darkshadow-color: #666; /*立体滚动条强阴影的颜色*/   
-   scrollbar-track-color: #666; /*立体滚动条背景颜色*/   
-   scrollbar-base-color:#f8f8f8; /*滚动条的基本颜色*/ 
+  scrollbar-arrow-color: #f4ae21; /*三角箭头的颜色*/
+  scrollbar-face-color: #333; /*立体滚动条的颜色*/
+  scrollbar-3dlight-color: #666; /*立体滚动条亮边的颜色*/
+  scrollbar-highlight-color: #666; /*滚动条空白部分的颜色*/
+  scrollbar-shadow-color: #999; /*立体滚动条阴影的颜色*/
+  scrollbar-darkshadow-color: #666; /*立体滚动条强阴影的颜色*/
+  scrollbar-track-color: #666; /*立体滚动条背景颜色*/
+  scrollbar-base-color: #f8f8f8; /*滚动条的基本颜色*/
 }
 ```
-修改后的IE滚动条样式如下：
+
+修改后的 IE 滚动条样式如下：
 
 ![微信截图_20200109113915](https://user-images.githubusercontent.com/23518990/72046073-9b779000-32f2-11ea-9262-fa2a700730fd.png)
 
-
 ### Firefox
 
-火狐64位目前只提供了部分自定义滚动条的属性：
+火狐 64 位目前只提供了部分自定义滚动条的属性：
 
 - `scrollbar-width`：该属性可取值：
+
 ```
 scrollbar-width: auto; // 默认值
 scrollbar-width: thin; // 比默认滚动条窄
 scrollbar-width: none; // 不显示滚动条，但是仍可以滚动
 ```
 
-下面是 `thin` 的样式（图一默认，图二thin）：
+下面是 `thin` 的样式（图一默认，图二 thin）：
 
 ![微信截图_20200109115611](https://user-images.githubusercontent.com/23518990/72046158-c7931100-32f2-11ea-956c-d5c980e26cd3.png)
 
-
-
 - `scrollbar-color `： 其可填写的值有：
+
 ```
 scrollbar-color: auto; // 默认值
 scrollbar-color: dark;
 scrollbar-color: light;
 scrollbar-color: red green; // 第一个滚轮颜色，第二个滚动条背景色
 ```
+
 > 其中`dark`和`light`并没有实现。
 
 示例代码：
@@ -154,25 +156,22 @@ scrollbar-color: red green; // 第一个滚轮颜色，第二个滚动条背景�
 }
 ```
 
-### 使用插件或者自己DIY
+### 使用插件或者自己 DIY
 
 比较好用的插件：
 
 - [JQuery Custom Scrollbar ](https://github.com/malihu/malihu-custom-scrollbar-plugin)
-- [Perfect Scrollbar](https://github.com/mdbootstrap/perfect-scrollbar) ： 只有6K大小。
-
+- [Perfect Scrollbar](https://github.com/mdbootstrap/perfect-scrollbar) ： 只有 6K 大小。
 
 ### 其它
 
-我看到还有更骚的操作是在界面上套一层div，然后在滚动条的地方挖孔，只显示一部分滚动条出来，然后显示的一部分滚动条就是类似自定义的样式。。。
-
-
+我看到还有更骚的操作是在界面上套一层 div，然后在滚动条的地方挖孔，只显示一部分滚动条出来，然后显示的一部分滚动条就是类似自定义的样式。。。
 
 ## 总结
 
-如果只是修改样式的，IE算是没辙了，但是firefox还有救。
+如果只是修改样式的，IE 算是没辙了，但是 firefox 还有救。
 
-我的折中方式是，把chrome的样式设置和firefox一样。
+我的折中方式是，把 chrome 的样式设置和 firefox 一样。
 
 代码：
 
@@ -192,7 +191,6 @@ scrollbar-color: red green; // 第一个滚轮颜色，第二个滚动条背景�
 兼容性：兼容chrome和firefox，不兼容IE
 
  */
-
 
 &::-webkit-scrollbar {
   width: 6px;
@@ -216,68 +214,80 @@ scrollbar-color: red green; // 第一个滚轮颜色，第二个滚动条背景�
   scrollbar-color: #c1c1c1 #eee;
 }
 ```
-如此，chrome和firefox可算长得一样了。
+
+如此，chrome 和 firefox 可算长得一样了。
 
 ![微信截图_20200109143901](https://user-images.githubusercontent.com/23518990/72046187-d2e63c80-32f2-11ea-8e55-edc778654bef.png)
 
 ---
-### *(added in 20201229)*
+
+### _(added in 20201229)_
 
 目前的一个问题是，同一个文件下的多个块元素不能使用多次这个文件：
 比如：
 
 ```css
 .category-manager {
-        width: 400px;
-        height: calc(~'100% - 60px');
-        float: left;
-        border: 1px solid #ddd;
-        overflow: auto;
-        @import '../../resources/less/custom_scroll';
-    }
+  width: 400px;
+  height: calc(~'100% - 60px');
+  float: left;
+  border: 1px solid #ddd;
+  overflow: auto;
+  @import '../../resources/less/custom_scroll';
+}
 
-    .subject-list {
-        height: calc(~'100% - 60px');
-        margin-left: 410px;
-        border: 1px solid #ddd;
-        overflow: auto;
-        @import '../../resources/less/custom_scroll';
-    }
+.subject-list {
+  height: calc(~'100% - 60px');
+  margin-left: 410px;
+  border: 1px solid #ddd;
+  overflow: auto;
+  @import '../../resources/less/custom_scroll';
+}
 ```
+
 这种情况下，第二个就会失效。
 
 那么，如何可以使得整个页面的多个块都可以使用自定义滚动条呢？
 
-如果在某个页面下都要用的话，那么在这个块根元素下加上这个代码（把_&_改为`*`）即可：
-```css
-*::-webkit-scrollbar {
-  width: 6px;
-  background-color: #eee;
+全局设置：
+
+```scss
+/**
+  * 滚动条样式
+  */
+/* 自定义整个滚动条的样式 */
+::-webkit-scrollbar {
+  width: 8px; /* 纵向滚动条的宽度 */
+  height: 8px; /* 横向滚动条的高度 */
 }
 
-*::-webkit-scrollbar-thumb {
-  background-color: #c1c1c1;
-
-  &:hover {
-    background-color: #a8a8a8;
-  }
-
-  &:active {
-    background-color: #787878;
-  }
+/* 自定义滚动条滑块（滚动条的可拖动部分）的样式 */
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 6px;
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #c1c1c1 #eee;
+/* 鼠标悬停在滚动条滑块上时的样式 */
+::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}
+
+/* 自定义滚动条轨道（背景）的样式 */
+::-webkit-scrollbar-track {
+  background: #f8f8f8;
+}
+
+// 兼容火狐
+@-moz-document url-prefix() {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ddd #f8f8f8;
+  }
 }
 ```
-
 
 ## 参考链接
 
 - https://segmentfault.com/a/1190000012800450
 
-
 （完）
-
