@@ -1,12 +1,10 @@
 html.dark .highlight,
 html.dark pre.highlight {
-  /* background: #282c34; */
-  background: #161b22;
+  background: #0d1117;
   color: #abb2bf;
 }
 html.dark .highlight pre {
-  /* background: #282c34; */
-  background: #161b22;
+  background: #0d1117;
 }
 html.dark .highlight .hll {
   background: #282c34;
