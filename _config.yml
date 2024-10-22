@@ -5,7 +5,7 @@ title: 前端队长の技术博客
 description: 前端队长の技术博客
 keywords: Daotin,前端,Web,Html,JavaScript,Vue,React,Node,Webpack,前端开发,前端工程师,前端博客,前端技术,前端队长
 author: Daotin
-footerText: "Copyright © 2024"
+footerText: 'Copyright © 2024'
 
 # 这些不要动
 permalink: /posts/:year/:month/:day/:title.html
@@ -13,25 +13,15 @@ kramdown:
   auto_ids: true
   input: GFM
   syntax_highlighter: rouge
-exclude:
-  [
-    "CNAME",
-    "README.md",
-    "LICENSE",
-    "_site",
-    "dist",
-    "Gemfile",
-    "Gemfile.lock",
-    "blog.sh",
-  ]
+exclude: ['CNAME', 'README.md', 'LICENSE', '_site', 'dist', 'Gemfile', 'Gemfile.lock', 'blog.sh']
 
 # 域名配置
 # baseurl配置,如果网站部署在根目录下的其他目录中，请设置为 /目录名
-domainUrl: "https://daotin.github.io"
-baseurl: "/fe-blog"
+domainUrl: 'https://daotin.github.io'
+baseurl: '/'
 
 # 吐个槽地址，会在chat页面中重定向到该地址
-tucaoUrl: "https://support.qq.com/product/380958" # https://support.qq.com/product/86335
+tucaoUrl: 'https://support.qq.com/product/380958' # https://support.qq.com/product/86335
 
 # 菜单
 # 必填字段 title: '文本' url: '链接'
