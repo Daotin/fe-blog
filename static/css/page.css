@@ -64,10 +64,10 @@ html.dark .list-post li .tags a {
 .page-search #search-input {
   text-align: center;
   font-size: 14px;
-  border-bottom: 2px solid #eaeaea;
+  border: 2px solid #eaeaea;
   width: 100%;
   padding: 10px 0;
-  background-color: transparent;
+  background-color: #eaeaea;
 }
 .page-search h1 {
   padding: 12px 0;
@@ -111,7 +111,7 @@ html.dark .list-post li .tags a {
 .page-search .list-search .hint {
   font-size: inherit;
   font-weight: bold;
-  color: #ff3f3f;
+  color: #58a6ff;
 }
 
 .markdown-body ol {

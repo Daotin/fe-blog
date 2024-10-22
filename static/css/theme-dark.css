@@ -2,7 +2,7 @@ html.dark {
   color: #c9d1d9;
   background: #0d1117;
 }
-html.dark body{
+html.dark body {
   background: #1b222e;
 }
 html.dark ::selection {
@@ -42,7 +42,7 @@ html.dark .page-post h6 {
   color: #dadfe4;
 }
 
-html.dark .page-post .post h1, 
+html.dark .page-post .post h1,
 html.dark .page-post .post h2 {
   border-color: #565a5d;
 }
@@ -55,7 +55,7 @@ html.dark .page-post code {
 }
 
 html.dark .page-post a {
-  background: linear-gradient(90deg, #58a6ff, #58a6ff), linear-gradient(90deg, #ff3f3f, #fc0);
+  background: linear-gradient(90deg, #58a6ff, #58a6ff), linear-gradient(90deg, #58a6ff, #fc0);
   background-size: 100% 1px, 0 3px;
   background-repeat: no-repeat;
   background-position: 0 100%;
@@ -64,7 +64,8 @@ html.dark .page-post a {
   margin: 0 2px;
 }
 html.dark .page-post a:hover {
-  background-size: 0 1px, 100% 3px;
+  /* background-size: 0 1px, 100% 3px; */
+  opacity: 0.9;
 }
 
 html.dark .page-post strong,
@@ -77,8 +78,8 @@ html.dark .page-post blockquote {
   background-color: rgba(59, 67, 75, 0.15);
   color: #8b949e; */
 
-  border-left: 4px solid rgb(251,179,96);
-  background-color: rgba(251,179,96, 0.2);
+  border-left: 4px solid rgb(251, 179, 96);
+  background-color: rgba(251, 179, 96, 0.2);
   color: #dadfe4;
 }
 
@@ -103,7 +104,8 @@ html.dark .page-post iframe {
 }
 html.dark .page-search #search-input {
   color: #f0f6fc;
-  border: 1px solid #21262d;
+  border: 2px solid #303741;
+  background-color: #303741;
 }
 html.dark .page-search #search-input::-webkit-input-placeholder {
   color: #c2c3c5;

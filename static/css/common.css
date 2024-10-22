@@ -1,5 +1,5 @@
 /* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
-@font-face {
+/* @font-face {
   font-display: swap;
   font-family: "soehne";
   font-weight: 400;
@@ -13,7 +13,7 @@
   font-weight: 400;
   font-style: italic;
   src: url("../font/soehne-buch-kursiv.woff2") format("woff2");
-}
+} */
 
 html {
   color: #333;
@@ -26,11 +26,12 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: all 500ms ease;
-  background-image: url("https://framerusercontent.com/images/NPRn2BR0kDn1qMi5KZMZFGNJBnU.png");
+  background-image: url('https://framerusercontent.com/images/NPRn2BR0kDn1qMi5KZMZFGNJBnU.png');
   /* font-family: Consolas, 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif; */
   /* font-family: 'Cascadia Code', 'PingFang SC', Consolas, Menlo, Courier, sans-serif; */
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; */
-  font-family: soehne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: soehne, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif,
+    'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 body {
@@ -83,7 +84,7 @@ textarea {
 pre,
 code {
   /* font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace; */
-  font-family: Menlo,Monaco,Consolas,Courier New,monospace;
+  font-family: Menlo, Monaco, Consolas, Courier New, monospace;
 }
 
 input:-webkit-autofill {
@@ -112,7 +113,7 @@ input:-webkit-autofill {
 }
 
 /* ::selection {
-  background-color: #ff3f3f;
+  background-color: #58a6ff;
   color: #ffffff;
 } */
 
@@ -127,7 +128,7 @@ input:-webkit-autofill {
   height: 1px;
   bottom: -2px;
   left: 0;
-  background-color: #ff3f3f;
+  background-color: #58a6ff;
   visibility: hidden;
   transform: scaleX(0);
   transition: transform 200ms ease-in-out;
@@ -139,7 +140,7 @@ input:-webkit-autofill {
 }
 
 .hover-underline:nth-of-type(6) {
-  color: #ff3f3f;
+  color: #58a6ff;
 }
 
 .header {
@@ -211,7 +212,7 @@ input:-webkit-autofill {
   transform: translateY(0);
 }
 
-#to-top>span {
+#to-top > span {
   display: block;
   width: 50%;
   height: 50%;
@@ -221,11 +222,11 @@ input:-webkit-autofill {
   transform: translateX(-50%) rotate(45deg);
 }
 
-#to-top>span:first-child {
+#to-top > span:first-child {
   background-color: #ffffff;
 }
 
-#to-top>span:last-child {
+#to-top > span:last-child {
   background-color: #000000;
   transform: translate(-50%, 16%) rotate(45deg);
 }
