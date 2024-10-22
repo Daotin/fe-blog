@@ -52,6 +52,7 @@ html.dark .page-post img {
 html.dark .page-post code {
   background-color: rgba(240, 246, 252, 0.15);
   color: #c9d1d9;
+  font-weight: bold;
 }
 
 html.dark .page-post a {

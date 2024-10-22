@@ -100,6 +100,7 @@
   margin: 0 4px;
   border-radius: 5px;
   transition: all 500ms ease;
+  font-weight: bold;
 }
 .page-post pre code {
   font-size: 14px;
