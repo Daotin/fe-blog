@@ -47,12 +47,12 @@
   color: #666;
 }
 .page-post a {
-  background: linear-gradient(90deg, #58a6ff, #58a6ff), linear-gradient(90deg, #58a6ff, #fc0);
+  background: linear-gradient(90deg, #1f88ff, #1f88ff), linear-gradient(90deg, #1f88ff, #fc0);
   background-size: 100% 1px, 0 3px;
   background-repeat: no-repeat;
   background-position: 0 100%;
   transition: 0.2s all;
-  color: #58a6ff;
+  color: #1f88ff;
   margin: 0 2px;
 }
 .page-post a:hover {
@@ -93,8 +93,8 @@
 }
 .page-post code {
   font-size: 14px;
-  background-color: #58a6ff0d;
-  color: #58a6ff;
+  background-color: #1f88ff0d;
+  color: #1f88ff;
   word-break: break-word;
   padding: 3px 5px;
   margin: 0 4px;
@@ -104,6 +104,7 @@
 }
 .page-post pre code {
   font-size: 14px;
+  font-weight: normal;
   background-color: transparent !important;
   word-break: keep-all;
   padding: 0;
